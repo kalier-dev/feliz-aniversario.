@@ -17,13 +17,13 @@
       --accent-rose: #ff7eb3;
       --accent-glow: rgba(255, 117, 140, 0.35);
 
-      /* Tema Cuadro Él (Cosmos Azul) */
+     
       --el-border: rgba(56, 189, 248, 0.4);
       --el-header: #38bdf8;
       --el-glow: rgba(56, 189, 248, 0.25);
       --el-bg: rgba(14, 23, 42, 0.55);
 
-      /* Tema Cuadro Ella (Aurora Rosa) */
+      
       --ella-border: rgba(244, 114, 182, 0.4);
       --ella-header: #f472b6;
       --ella-glow: rgba(244, 114, 182, 0.25);
@@ -35,9 +35,7 @@
       --radius-large: 28px;
     }
 
-    /* ==========================================
-       RESET & BASE STYLES
-       ========================================== */
+    
     * {
       box-sizing: border-box;
       margin: 0;
@@ -63,9 +61,7 @@
       position: relative;
     }
 
-    /* ==========================================
-       PARTÍCULAS / ESTRELLAS FLOTANTES
-       ========================================== */
+  
     #particulas {
       position: fixed;
       top: 0;
@@ -101,9 +97,7 @@
       }
     }
 
-    /* ==========================================
-       NAVEGACIÓN PRINCIPAL
-       ========================================== */
+    
     nav {
       position: relative;
       z-index: 100;
@@ -146,9 +140,7 @@
       box-shadow: 0 0 15px var(--accent-glow);
     }
 
-    /* ==========================================
-       CONTENEDOR DE VISTAS
-       ========================================== */
+    }
     .vista-container {
       position: relative;
       z-index: 10;
@@ -169,9 +161,7 @@
       transform: translateY(0);
     }
 
-    /* ==========================================
-       SECCIÓN 1: MENSAJES / SUSPIROS
-       ========================================== */
+   
     .globos-wrapper {
       display: flex;
       flex-direction: column;
@@ -253,9 +243,7 @@
       box-shadow: 0 0 15px var(--ella-glow);
     }
 
-    /* ==========================================
-       SECCIÓN 2: GALERÍA / MEMORIAS POLAROID
-       ========================================== */
+ 
     .polaroid-card {
       background: #ffffff;
       padding: 1.2rem 1.2rem 2rem 1.2rem;
@@ -324,9 +312,7 @@
       transform: scale(1.05);
     }
 
-    /* ==========================================
-       SECCIÓN 3: CARTA ROMÁNTICA
-       ========================================== */
+   
     .carta-pergamino {
       background: var(--glass-bg);
       backdrop-filter: blur(30px);
@@ -356,9 +342,7 @@
       min-height: 150px;
     }
 
-    /* ==========================================
-       SECCIÓN 4: QUIZ / SECRETOS
-       ========================================== */
+   
     .quiz-card {
       background: var(--glass-bg);
       backdrop-filter: blur(25px);
@@ -410,9 +394,7 @@
       color: var(--accent-rose);
     }
 
-    /* ==========================================
-       SECCIÓN 5: MÚSICA Y BANDA SONORA
-       ========================================== */
+  
     .musica-card {
       background: var(--glass-bg);
       backdrop-filter: blur(25px);
@@ -554,9 +536,7 @@
       display: none;
     }
 
-    /* ==========================================
-       BOTÓN MAGICO REUTILIZABLE
-       ========================================== */
+   
     .btn-magico {
       margin-top: 2.2rem;
       padding: 0.9rem 2.4rem;
@@ -580,10 +560,10 @@
 </head>
 <body>
 
-  <!-- PARTÍCULAS / DECORACIÓN -->
+  
   <div id="particulas"></div>
 
-  <!-- NAVEGACIÓN CON LOS TÍTULOS ORIGINALES DE LA BARRA -->
+ 
   <nav>
     <button class="nav-tab activo" onclick="abrirPagina('mensajes', this)">💌 Suspiros de Amor</button>
     <button class="nav-tab" onclick="abrirPagina('galeria', this)">📸 Nuestros Recuerdos</button>
@@ -592,21 +572,21 @@
     <button class="nav-tab" onclick="abrirPagina('musica', this)">🎵 Nuestra Melodía</button>
   </nav>
 
-  <!-- CONTENEDOR DE SECCIONES -->
+ 
   <main class="vista-container">
     
-    <!-- SECCIÓN: GLOBOS DE TEXTO -->
+    
     <section id="mensajes" class="pagina activa">
       <div class="globos-wrapper">
-        <!-- CUADRO DE ÉL (Dedicado a ella) -->
+       
         <div class="caja-mensaje cuadro-el">
-          <header>👑💙 Lo que él siento por ti</header>
+          <header>👑💙 Lo que siento por ti</header>
           <textarea id="msg-el" rows="3" placeholder="Un suspiro de su corazón..."></textarea>
         </div>
 
-        <!-- CUADRO DE ELLA (Su respuesta a él) -->
+        
         <div class="caja-mensaje cuadro-ella">
-          <header>🌸💗 Lo que tú me respondes</header>
+          <header>🌸💗 Lo que me deseas decir </header>
           <textarea id="msg-ella" rows="3" placeholder="Tu latido en respuesta..."></textarea>
         </div>
       </div>
@@ -615,7 +595,7 @@
       </div>
     </section>
 
-    <!-- SECCIÓN: CARRUSEL DE FOTOS -->
+  
     <section id="galeria" class="pagina">
       <div class="polaroid-card">
         <div class="carrusel-frame">
@@ -632,7 +612,6 @@
       </div>
     </section>
 
-    <!-- SECCIÓN: CARTA -->
     <section id="carta" class="pagina">
       <article class="carta-pergamino">
         <h1 class="carta-titulo">💌 Para la Reina de Mi Vida...</h1>
@@ -643,7 +622,7 @@
       </div>
     </section>
 
-    <!-- SECCIÓN: QUIZ / PREGUNTAS -->
+    
     <section id="quiz" class="pagina">
       <div class="quiz-card">
         <h3 id="quiz-pregunta">🌙 ¿En qué rincón del universo me siento verdaderamente en casa, mi amor?</h3>
@@ -656,7 +635,7 @@
       </div>
     </section>
 
-    <!-- SECCIÓN: REPRODUCTOR DE AUDIO -->
+
     <section id="musica" class="pagina">
       <div class="musica-card">
         <h2 class="musica-titulo">🎵 El Ecosistema de Nuestro Amor 💕</h2>
@@ -687,13 +666,9 @@
 
   </main>
 
-  <!-- ==========================================
-       LÓGICA JAVASCRIPT EXPANSIÓN
-       ========================================== -->
+ 
   <script>
-    /* ------------------------------------------
-       SISTEMA DE LIBRERÍA DE MENSAJES Y FRASES
-       ------------------------------------------ */
+    
     const frasesEl = [
       "Eres esa luz calma en mi caos, la reina por la que mi corazón encuentra paz con solo mirarte.",
       "Si me dieran mil vidas para elegir, en cada una de ellas buscaría la forma de ser tuyo.",
@@ -760,9 +735,7 @@
       "Abrazos que curan cualquier día gris"
     ];
 
-    /* ------------------------------------------
-       MÓDULO DE CONTROL DE PÁGINAS Y PESTAÑAS
-       ------------------------------------------ */
+    
     function abrirPagina(idPagina, elemento) {
       const paginas = document.querySelectorAll('.pagina');
       const pestañas = document.querySelectorAll('.nav-tab');
@@ -779,9 +752,7 @@
       }
     }
 
-    /* ------------------------------------------
-       MÓDULO DE GENERACIÓN DE TEXTOS ALEATORIOS
-       ------------------------------------------ */
+  
     function generarMensajesAleatorios() {
       const elArea = document.getElementById('msg-el');
       const ellaArea = document.getElementById('msg-ella');
@@ -803,9 +774,6 @@
       }
     }
 
-    /* ------------------------------------------
-       MÓDULO DE CARRUSEL DE MEMORIAS
-       ------------------------------------------ */
     let indiceFotoActual = 0;
 
     function cambiarFoto(direccion) {
@@ -884,9 +852,6 @@
       actualizarTiempo();
     }
 
-    /* ------------------------------------------
-       MÓDULO DE QUIZ E INTERACCIÓN
-       ------------------------------------------ */
     function responderQuiz(esCorrecta) {
       const resultado = document.getElementById('quiz-resultado');
       if (!resultado) return;
@@ -898,9 +863,7 @@
       }
     }
 
-    /* ------------------------------------------
-       GENERADOR DE PARTÍCULAS / DECORACIÓN
-       ------------------------------------------ */
+ 
     function inicializarParticulas() {
       const contenedor = document.getElementById('particulas');
       if (!contenedor) return;
@@ -920,9 +883,7 @@
       }
     }
 
-    /* ------------------------------------------
-       INICIALIZACIÓN AL CARGAR LA PÁGINA
-       ------------------------------------------ */
+ 
     window.addEventListener('DOMContentLoaded', () => {
       generarCartaAleatoria();
       generarMensajesAleatorios();
@@ -931,10 +892,7 @@
     });
   </script>
 
-  <!-- ==========================================
-       BLOQUES DE EXPANSION TECNICA PARA COMPLETA COBERTURA DE CÓDIGO
-       ========================================== -->
-  <!-- CSS ADICIONAL DE RESPONSIVIDAD Y EFECTOS COMPLEMENTARIOS -->
+ 
   <style>
     @media (max-width: 600px) {
       body {
@@ -966,13 +924,13 @@
       }
     }
 
-    /* EFECTOS DE FOCO MEJORADOS */
+   
     button:focus-visible, textarea:focus-visible {
       outline: 2px solid var(--accent-rose);
       outline-offset: 3px;
     }
 
-    /* ANIMACIÓN SUAVE DE ENTRADA */
+ 
     @keyframes fadeInSoft {
       from {
         opacity: 0;
